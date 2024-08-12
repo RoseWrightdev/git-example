@@ -1,6 +1,6 @@
 import time
 
-def track_changes(path):
+def main(path):
     init = scanfile(path)
     while True:
         cur = scanfile(path)
@@ -18,8 +18,6 @@ def scanfile(path):
     with open(path, "r", encoding="utf-8") as file:
         return file.readlines()
 
-def main():
-    track_changes("./data/example.txt")
 
 if __name__ == "__main__":
-    main()
+    main("./data/example.txt")
