@@ -12,7 +12,7 @@ def track_changes(path):
         if len(cur) != len(init):
             print(f"Change detected in {path}: number of lines changed from {len(init)} to {len(cur)}.")
         init = cur
-        time.sleep(1)
+        time.sleep(.5)
 
 def scanfile(path):
     with open(path, "r", encoding="utf-8") as file:
