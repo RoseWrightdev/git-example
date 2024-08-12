@@ -10,7 +10,7 @@ def track_changes(path):
                 print(f"Old line: {line_init.strip()}")
                 print(f"New line: {line_cur.strip()}")
         if len(cur) != len(init):
-            print(f"Change detected in {path}: number of lines changed")
+            print(f"Change detected in {path}: number of lines changed from {len(init)} to {len(cur)}.")
         init = cur
         time.sleep(1)
 
