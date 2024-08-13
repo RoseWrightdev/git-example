@@ -3,6 +3,7 @@ import time
 def main(path):
     init = scanfile(path)
     while True:
+        print("hello world!")
         cur = scanfile(path)
         for i, (line_init, line_cur) in enumerate(zip(init, cur)):
             if line_init != line_cur:
