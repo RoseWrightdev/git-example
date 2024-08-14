@@ -1,4 +1,4 @@
-data example
+data exam
 
 I love foxes
 
